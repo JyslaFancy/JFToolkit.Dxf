@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <LangVersion>12</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>JFToolkit.Dxf</RootNamespace>
+    <AssemblyName>JFToolkit.Dxf</AssemblyName>
+
+    <!-- NuGet metadata -->
+    <PackageId>JFToolkit.Dxf</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Harald Daltveit</Authors>
+    <Description>
+      Zero-dependency .NET library for reading and writing DXF files.
+      Focused on block extraction and insertion — open a template,
+      extract blocks, paste them into plot frames at specific positions.
+      Supports DXF R2000 and later.
+    </Description>
+    <PackageTags>dxf;autocad;cad;block;insert;drawing;engineering</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
